@@ -56,5 +56,28 @@ public class Ch03_문자열 {
         System.out.println(String.format("나는 사과를 %d개 먹었다!" , 10));
         // 두개 이상 입력
         System.out.println(String.format("나는 사과를 %d개 먹고 아파서 %s일 약을 먹었다." , 5 , "삼"));
+
+        //문자열 포멧 코드 (%s=문자열 , %c=문자하나 , %d=정수 , %f=소수점있는 숫자)
+
+        //문자열 포멧 정렬과 공백 %자릿수s , %10d 이것도 같음 숫자를 입력
+        System.out.println(String.format("%10s" , "하이"));
+        // -공백 -를 쓰면 공백이 뒤에 들어감
+        System.out.println(String.format("%-10s펭수","하이"));
+        //소수점 표현 (.소수점자릿수(.4면 소수점 4자리까지 나옴) 짤리는 숫자는 반올림됨)
+        System.out.println(String.format("%.4f",3.42153615));
+        //전체 자릿수와 소수점자리
+        System.out.println(String.format("%10.4f",3.421532489452));
+        //print 는 출력 메소드, println 은 한줄로 출력함
+        //printf : 문자열 포멧을 포함하는 출력 메소드
+        System.out.print("출력!");
+        System.out.print("출력!");
+        System.out.println("한줄출력!"); // <br> 같은 느낌 println은
+        System.out.println("한줄출력!");
+        //String.format 메소드를 포함
+        System.out.printf("나는 오늘 아침에 사과 %d개를 먹었다.",3);
+
+
     }
+
+
 }
