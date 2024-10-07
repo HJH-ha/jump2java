@@ -25,6 +25,11 @@ class Sample{
             return;  // 종료 , (아래의 코드는 실행 안됨)
         }
         System.out.println("나의 별명은 "+nick+" 입니다.");
+    }
+    // 매서드 안에 선언 변수 효력범위(매서드 안에서만 사용)
+    int varTest(int a){
+        a++;
+        return a;
 
     }
 }
@@ -60,8 +65,8 @@ public class Ch05_매서드 {
         ad.sayNick("짱구");
         ad.sayNick("등신"); // 출력안됨.
 
-
-
-
+        int a = 1;
+        a = ad.varTest(a);
+        System.out.println(a);
     }
 }
