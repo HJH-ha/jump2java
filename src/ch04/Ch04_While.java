@@ -13,6 +13,15 @@ public class Ch04_While {
             }
         }*/
 
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("나무를 " + i + "번 찍습니다.");
+            if (i == 10) {
+                System.out.println("나무가 넘어갑니다.");
+            }
+
+        }
+
         // break : 반복문 빠져나오기 while for 반복문 다 사용가능.
 /*        int coffee = 10;
         int money = 1000;
@@ -36,6 +45,11 @@ public class Ch04_While {
             }
             System.out.println(a); // 홀수만 출력함
         }*/
+
+        int a = 2;
+        while (a < 10){
+
+        }
 
     }
 }

@@ -3,7 +3,7 @@ package ch04;
 public class Ex04_01 {
     public static void main(String[] args) {
         int a = 5;
-        int b = 6;
+        int b = 5;
 
         if (a > b) {
             System.out.println(">");
@@ -26,6 +26,7 @@ public class Ex04_01 {
         } else {
             System.out.println("F");
         }
+        System.out.println();
 
 
         int year = 2020;
@@ -35,19 +36,28 @@ public class Ex04_01 {
         } else {
             System.out.println("0");
         }
+        System.out.println();
 
-        System.out.println("Hello World!");
+        int x = -9;
+        int y = 13;
 
-        int c = 1;
-        int d = 3;
+        if (x > 0 && y > 0) {
+            System.out.println("1");
+        } else if (x > 0 && y < 0) {
+            System.out.println("4");
+        } else if (x < 0 && y > 0) {
+            System.out.println("2");
 
-        System.out.println(c+d);
-        System.out.println(c-d);
-        System.out.println(c*d);
-        System.out.println(c/d);
-        System.out.println(c%d);
+        } else {
+            System.out.println("3");
+        }
+        System.out.println();
+
 
 
     }
 
 }
+
+
+
