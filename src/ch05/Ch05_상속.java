@@ -12,6 +12,11 @@ class Anima {
 //자식 클래스 'extends' + 부모 클래스 이름
 // Anima  클래스를 상속
 class Dog extends Anima {
+    // 생성자는 클래스명과 똑같고, 리턴이 없음.
+    // 그중에 디폴트 생성자는 입력변수가 없음(생략 가능)
+    Dog(){
+        System.out.println("도그객체 생성!");
+    } //
     void sleep() {
         System.out.println(this.name + "zzz"); // this 는 이 클래스(본인클래스) 안에 있는 이름
     }
@@ -23,9 +28,10 @@ class HouseDog extends Dog {
     void sleep() {
         System.out.println(this.name + "zzz in Home");
     }
+
     //매소드는 이름외에 리턴타입과 입력변수가 똑같지 않으면 새로운 매소드
-    void sleep(int hours){
-        System.out.println(this.name + "zzz in Home "+ hours + "시간");
+    void sleep(int hours) {
+        System.out.println(this.name + "zzz in Home " + hours + "시간");
     }
 }
 
@@ -37,7 +43,7 @@ public class Ch05_상속 {
         System.out.println(d.name);
         d.sleep();
 
-        // (선언)Anima a = new Dog(); // 상속관계일때는 선언을 부모 클래스로 해도 아무 상관없음. 가능함.
+         Anima a = new Dog(); // 상속관계일때는 선언을 부모 클래스로 해도 아무 상관없음. 가능함.
         // (선언)Dog c = new Anima(); -> 자식타입으로 선언하고 부모객체를 불러오는건 안됨. 위에랑 반대로는 사용불가능.
         // 동물(부모) - 자식은 여라가지 동물 (고양이 개 돼지 소 등등)
         // 형제 관계일때는 그냥 서로 무관. 따로 사용
@@ -53,9 +59,6 @@ public class Ch05_상속 {
         // 매서드 오버로딩(method overloading)
         // 이름은 같지만 입력변수가 틀리다.(다른 메소드)
         h.sleep(18);
-
-
-
     }
 
 }
